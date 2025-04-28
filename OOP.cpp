@@ -2,13 +2,14 @@
 using namespace std;
 
 class Hewan{
-    private:
+private: //Akses modifier
     string jenisKelamin;
-    public:
+
+public:
     string tipe;
     string umur;
 
-    void inputData() { 
+    void inputData() {  //metode
         cout << "masukan jenis kelamin = " << endl;
         cin >> jenisKelamin;
         cout << "masukan tipe = " << endl;
@@ -21,7 +22,7 @@ class Hewan{
     }
 };
 int main() {
-    Hewan hwn;
+    Hewan hwn; //membuat objek
     hwn.inputData();
     cout << "umurnya adalah " << hwn.umur << endl;
     cout << "tipenya adalah " << hwn.tipe << endl;
