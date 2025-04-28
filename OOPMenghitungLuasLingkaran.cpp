@@ -1,25 +1,30 @@
 #include <iostream>
 using namespace std;
 
-class LuasLingkaran{
+class lingkaran
+{
+    public:
     double jarijari;
-    
+    double luas;
 
+    void inputData()
+    {
+    cout << "masukkan jari jari = " << endl;
+    cin >> jarijari;
+    }
 
-    void inputData() {  //metode
-        cout << "masukan jarijari = " << endl;
+    double hitungLuas(){
+        return 3.14*jarijari*jarijari;
+    }
+    void menghitungLuas(){
+        cout << " masukkan jarijari " << endl;
         cin >> jarijari;
     }
-    double hitugLuas () {
-        return 3.14 * jarijari * jarijari << endl;
-    }
-};
-
-int main() {
-    LuasLingkaran LL;
-    LL.inputData();
+};   
+int main(){
+    lingkaran bulat;
+    bulat.inputData();
     cout << endl;
-    cout << "luasnya adalah = " << LL.hitungLuas() << endl;
+    cout << "luasnya adalah = " << bulat.hitungLuas() << endl;
     cout << endl;
-    
 }
