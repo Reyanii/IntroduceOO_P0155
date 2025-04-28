@@ -16,10 +16,14 @@ class Hewan{
         cout << "masukan umur = " << endl;
         cin >> umur;
     }
+    void tampilHewan(){
+        cout << "jenis kelaminnya asalah " << jenisKelamin << endl;
+    }
 };
 int main() {
     Hewan hwn;
     hwn.inputData();
     cout << "umurnya adalah " << hwn.umur << endl;
     cout << "tipenya adalah " << hwn.tipe << endl;
+    hwn.tampilHewan();
 }
